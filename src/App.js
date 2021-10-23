@@ -1,10 +1,14 @@
-import './App.css';
+import './App.scss';
 
 // Routes
 import Navigation from './routes/Navigation';
 
 function App() {
-  return <Navigation />;
+  return (
+    <div className='app'>
+      <Navigation />
+    </div>
+  );
 }
 
 export default App;

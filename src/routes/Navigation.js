@@ -14,7 +14,7 @@ import Navigationbar from '../components/navigationbar/Navigationbar';
 const Navigation = () => {
   return (
     <Router>
-      <div>
+      <div className='container'>
         <Header />
         <Navigationbar />
         <Switch>

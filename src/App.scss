@@ -1,0 +1,61 @@
+@import '~bootstrap/scss/bootstrap';
+@import './constants/colors';
+@import './constants/styles';
+body {
+    background: $bg;
+    font-family: 'Lato';
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+//-------------------------------------//
+// ------------Components--------------//
+//-------------------------------------//
+//-!Start----------Header----------//
+.header {
+    @include flex-v-centered;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header-left {
+    @include flex-v-centered;
+}
+
+.header-right {
+    @include flex-v-centered;
+}
+
+.notification-icon {
+    padding-right: 10px;
+}
+
+//-!End----------Header----------//
+//--!Start-----Search Bar---------//
+.search-bar {
+    @include flex-v-centered;
+    background: $white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    width: 350px;
+}
+
+.search-bar {
+    input {
+        border: none;
+        padding-left: 13px;
+        @include input-text;
+    }
+    input:focus {
+        outline: none;
+    }
+}
+
+.search-bar input::placeholder {
+    @include placeholder-text;
+}
+
+//--!End-------Search Bar---------//
