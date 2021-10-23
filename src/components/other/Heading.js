@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Searchbar = () => {
+const Heading = () => {
   return <div></div>;
 };
 
-export default Searchbar;
+export default Heading;
