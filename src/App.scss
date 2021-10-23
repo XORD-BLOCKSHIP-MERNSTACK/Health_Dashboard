@@ -60,6 +60,10 @@ code {
 
 //--!End-------Search Bar---------//
 //--!Start-----Navigation Bar------//
+.nav-bar {
+    margin-top: 5px;
+}
+
 .nav-bar,
 .links {
     @include flex-v-centered;
@@ -69,9 +73,7 @@ code {
     display: none;
 }
 
-@media screen and (max-width: 600px) {}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     .nav-bar .links {
         display: none;
     }
@@ -107,3 +109,46 @@ code {
 }
 
 //--!End-----Navigation Link------//
+//--!Start-----Analytics---------//
+.analytics {
+    padding-top: 23px;
+}
+
+//--!End-------Analytics---------//
+//--!Start-------Analytics Card---------//
+.card {
+    padding: 0px 20px;
+}
+
+.analytics-card {
+    @include flex-v-centered;
+    background: $white;
+    padding: 2px 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    .card-image-con,
+    .card-text-con {
+        align-items: center;
+    }
+    .card-text-con {
+        padding-top: 20px;
+        padding-left: 24px;
+    }
+    .card-title {
+        @include subtitle-2-text;
+        color: $black;
+    }
+    .card-stats {
+        @include stats-text;
+        color: $blue;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .search-bar {
+        display: none;
+    }
+}
+
+//--!End-------Analytics Card---------//

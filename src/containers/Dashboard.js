@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Analytics from '../components/analytics/Analytics';
 
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return (
+    <Fragment>
+      <Analytics />
+    </Fragment>
+  );
 };
 
 export default Dashboard;
