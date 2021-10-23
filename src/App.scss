@@ -59,3 +59,51 @@ code {
 }
 
 //--!End-------Search Bar---------//
+//--!Start-----Navigation Bar------//
+.nav-bar,
+.links {
+    @include flex-v-centered;
+}
+
+.collapse-icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 600px) {
+    .nav-bar .links {
+        display: none;
+    }
+    .nav-bar-responsive .links {
+        display: block;
+    }
+    .nav-bar-responsive {
+        position: block;
+    }
+    .collapse-icon {
+        float: right;
+        display: block;
+    }
+}
+
+//--!End-----Navigation Bar------//
+//--!Start-----Navigation Link------//
+.nav-link {
+    padding: 14px 33px 14px 0px;
+    text-decoration: none;
+    .active {
+        @include subtitle-2-text;
+        color: $blue;
+    }
+    .inactive {
+        @include subtitle-2-text;
+        color: $darkGrey;
+    }
+    .active,
+    .inactive:hover {
+        color: $lightBlue;
+    }
+}
+
+//--!End-----Navigation Link------//
