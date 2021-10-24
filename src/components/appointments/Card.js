@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Images
 import EditIcon from '../../assets/crud/editIcon.png';
 import DeleteIcon from '../../assets/crud/deleteIcon.png';
-import UserImg from '../../assets/other/user.png';
 
 export const Card = (props) => {
   const { userimg, name, email, date, visitTime, doctor, condition } =

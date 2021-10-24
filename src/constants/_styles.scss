@@ -9,9 +9,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 16px;
     letter-spacing: 0.1px;
-    color: $gray;
 }
 
 @mixin input-text {
@@ -51,4 +49,12 @@
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.1px;
+}
+
+@mixin main-heading {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.2px;
 }
