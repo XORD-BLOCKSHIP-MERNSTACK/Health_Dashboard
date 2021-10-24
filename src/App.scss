@@ -124,7 +124,7 @@ code {
     @include flex-v-centered;
     background: $white;
     padding: 2px 24px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
     .card-image-con,
@@ -152,3 +152,123 @@ code {
 }
 
 //--!End-------Analytics Card---------//
+//--!Start-------Activity------------//
+.activity {
+    background: $white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin: 10px 0px 20px 0px;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    .heading-con {
+        padding: 20px 0px 8px 25px;
+    }
+    .list-con {}
+}
+
+//--!End--------Activity------------//
+//--!Start------Heading------------//
+.subHeading {
+    @include sub-heading;
+    color: $black;
+}
+
+//--!End-----Heading-------------//
+//--!Start-----Activity Card-------//
+.label-card {
+    background: $lightGray;
+    padding: 20px 25px 12px 25px;
+    flex-direction: column;
+    border-bottom: 1px solid $grayLighter;
+    .col-sm-3 {
+        // @include flex-v-centered;
+        align-items: center;
+        .label {
+            width: 250px;
+        }
+    }
+    .col-sm-8 {
+        @include flex-v-centered;
+    }
+    .col-sm-1 {
+        display: none;
+    }
+    .label,
+    .label1,
+    .label5,
+    .label3 {
+        @include subtitle-2-text;
+        color: $black;
+        margin-right: 15px;
+    }
+}
+
+.label1 {
+    @include flex-v-centered;
+    width: 200px;
+}
+
+.label {
+    @include flex-v-centered;
+    width: 100px;
+}
+
+.label3 {
+    @include flex-v-centered;
+    width: 100px;
+}
+
+.label5 {
+    @include flex-v-centered;
+    width: 128px;
+}
+
+@media screen and (max-width: 850px) {
+    .label-card,
+    .data-card {
+        .col-sm-8 {
+            flex-direction: column;
+        }
+        .label,
+        .label1,
+        .label5,
+        .label3 {
+            width: auto;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.data-card {
+    background: $lightGray;
+    padding: 20px 25px 12px 25px;
+    flex-direction: column;
+    border-bottom: 1px solid $grayLighter;
+    .col-sm-3 {
+        @include flex-v-centered;
+        .label {
+            margin-left: 15px;
+            width: 250px;
+        }
+        img {
+            margin-top: -8px;
+        }
+    }
+    .col-sm-8 {
+        @include flex-v-centered;
+    }
+    .col-sm-1 {
+        @include flex-v-centered;
+        justify-content: space-around;
+        margin-top: -5px;
+    }
+    .label,
+    .label1,
+    .label5,
+    .label3 {
+        @include list-text;
+        color: $darkGrey;
+        margin-right: 15px;
+    }
+}
+
+//--!End-----Activity Card-------//

@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Heading = () => {
-  return <div></div>;
+export const SubHeading = (props) => {
+  const { subHeading } = props;
+  return <h5 className='subHeading'>{subHeading}</h5>;
 };
-
-export default Heading;

@@ -2,7 +2,7 @@ import AppointmentIcon from '../assets/analytics/appointmentIcon.svg';
 import PatientIcon from '../assets/analytics/patientIcon.svg';
 import OperationIcon from '../assets/analytics/operationIcon.svg';
 import EarningIcon from '../assets/analytics/earningIcon.svg';
-
+import UserImg from '../assets/other/user.png';
 export const NavLinks = [
   {
     path: '/',
@@ -66,5 +66,62 @@ export const AnalyticsStats = [
     title: 'Hospital Earnings',
     stats: '$ 12,174',
     image: EarningIcon,
+  },
+];
+
+export const Appointment = [
+  {
+    userimg: UserImg,
+    name: 'Leslie Alexander',
+    email: 'lesie.alexander@example.com',
+    date: '10/10/2020',
+    visitTime: '09:15-09:45am',
+    doctor: 'Dr. Jacob Jones',
+    condition: 'Mumps Stage II',
+  },
+  {
+    userimg: UserImg,
+    name: 'Leslie Alexander',
+    email: 'lesie.alexander@example.com',
+    date: '10/10/2020',
+    visitTime: '09:15-09:45am',
+    doctor: 'Dr. Jacob Jones',
+    condition: 'Mumps Stage II',
+  },
+  {
+    userimg: UserImg,
+    name: 'Leslie Alexander',
+    email: 'lesie.alexander@example.com',
+    date: '10/10/2020',
+    visitTime: '09:15-09:45am',
+    doctor: 'Dr. Jacob Jones',
+    condition: 'Mumps Stage II',
+  },
+  {
+    userimg: UserImg,
+    name: 'Leslie Alexander',
+    email: 'lesie.alexander@example.com',
+    date: '10/10/2020',
+    visitTime: '09:15-09:45am',
+    doctor: 'Dr. Jacob Jones',
+    condition: 'Mumps Stage II',
+  },
+  {
+    userimg: UserImg,
+    name: 'Leslie Alexander',
+    email: 'lesie.alexander@example.com',
+    date: '10/10/2020',
+    visitTime: '09:15-09:45am',
+    doctor: 'Dr. Jacob Jones',
+    condition: 'Mumps Stage II',
+  },
+  {
+    userimg: UserImg,
+    name: 'Leslie Alexander',
+    email: 'lesie.alexander@example.com',
+    date: '10/10/2020',
+    visitTime: '09:15-09:45am',
+    doctor: 'Dr. Jacob Jones',
+    condition: 'Mumps Stage II',
   },
 ];

@@ -24,7 +24,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 15px;
+    // line-height: 15px;
     letter-spacing: 0.1px;
 }
 
@@ -34,5 +34,21 @@
     font-weight: normal;
     font-size: 18px;
     display: flex;
+    letter-spacing: 0.1px;
+}
+
+@mixin sub-heading {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+@mixin list-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
     letter-spacing: 0.1px;
 }
