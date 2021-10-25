@@ -58,7 +58,11 @@ const Navigation = (props) => {
               handleSearch(e.target.value);
             }}
           />
-          <Navigationbar />
+          <Navigationbar
+            onChange={(e) => {
+              handleSearch(e.target.value);
+            }}
+          />
         </div>
         <Switch>
           <Route exact path='/login' render={() => <Login />} />

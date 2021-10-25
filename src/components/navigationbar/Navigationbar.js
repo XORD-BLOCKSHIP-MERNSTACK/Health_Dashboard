@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 
+// Icons
+import { AiOutlineMenuUnfold } from 'react-icons/ai';
+
 // Links Data
 import { NavLinks } from '../../constants/staticData';
 
 // Custom components
 import { List } from '../other/List';
 import Navlink from './Navlink';
+import Searchbar from '../header/Searchbar';
 
-const Navigationbar = () => {
+const Navigationbar = (props) => {
+  const { onChange } = props;
   // State
   const [toggle, setToggle] = useState(false);
 
@@ -17,7 +22,8 @@ const Navigationbar = () => {
         {NavLinks ? <List list={NavLinks} Component={Navlink} /> : <></>}
       </div>
       <div className='collapse-icon' onClick={() => setToggle(!toggle)}>
-        <h3>icon</h3>
+        <AiOutlineMenuUnfold size={30} color='#558EFF' />
+        <Searchbar onChange={onChange} />
       </div>
     </div>
   );
