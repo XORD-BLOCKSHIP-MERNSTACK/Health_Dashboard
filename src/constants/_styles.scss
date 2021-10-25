@@ -58,3 +58,19 @@
     font-size: 40px;
     letter-spacing: 0.2px;
 }
+
+@mixin graphtext {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+}
+
+@mixin graphlabel {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+}

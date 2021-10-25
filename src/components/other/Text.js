@@ -1,7 +1,28 @@
 import React from 'react';
 
-const Text = () => {
-  return <div></div>;
-};
+export const Graphtext = (props) => {
+  const { text, color } = props;
 
-export default Text;
+  return (
+    <div
+      className={
+        color === 'blue'
+          ? 'graph-text-con'
+          : color === 'yellow'
+          ? 'graph-text-con-2'
+          : 'graph-con-other'
+      }
+    >
+      <div
+        className={
+          color === 'blue'
+            ? 'line-blue'
+            : color === 'yellow'
+            ? 'line-yellow'
+            : 'line-other'
+        }
+      ></div>
+      <p>{text}</p>
+    </div>
+  );
+};

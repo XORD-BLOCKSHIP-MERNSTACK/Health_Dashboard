@@ -6,6 +6,7 @@ import { AnalyticsStats } from '../../constants/staticData';
 // Custom Components
 import Card from './Card';
 import List from '../other/List';
+import { Earninggraphs, Patientsgraph } from './Graph';
 
 const Analytics = () => {
   return (
@@ -15,7 +16,10 @@ const Analytics = () => {
           <List list={AnalyticsStats} Component={Card} />
         </div>
       </div>
-      <div className='analytics-graphs'></div>
+      <div className='analytics-graphs'>
+        <Patientsgraph />
+        <Earninggraphs />
+      </div>
     </div>
   );
 };

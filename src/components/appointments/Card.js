@@ -5,8 +5,14 @@ import EditIcon from '../../assets/crud/editIcon.png';
 import DeleteIcon from '../../assets/crud/deleteIcon.png';
 
 export const Card = (props) => {
+  // Destructuring props
   const { userimg, name, email, date, visitTime, doctor, condition } =
     props.data;
+
+  // handling edit data
+  const onClickHandler = () => {
+    alert('Under Construction');
+  };
 
   return (
     <div className='data-card'>
@@ -23,8 +29,18 @@ export const Card = (props) => {
           <h6 className='label5'>{doctor}</h6>
         </div>
         <div className='col-sm-1'>
-          <img className='img-fluid' src={EditIcon} alt='Edit Icon' />
-          <img className='img-fluid' src={DeleteIcon} alt='Delete Icon' />
+          <img
+            onClick={onClickHandler}
+            className='img-fluid'
+            src={EditIcon}
+            alt='Edit Icon'
+          />
+          <img
+            onClick={onClickHandler}
+            className='img-fluid'
+            src={DeleteIcon}
+            alt='Delete Icon'
+          />
         </div>
       </div>
     </div>

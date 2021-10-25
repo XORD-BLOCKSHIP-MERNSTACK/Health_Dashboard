@@ -328,3 +328,101 @@ code {
 }
 
 //--!End-----Paging-------------//
+//--!Start-----Graph--------------//
+.graph-con-other {
+    margin-top: 7px;
+    @include flex-v-centered;
+    p {
+        @include graphtext;
+        color: $gray;
+    }
+    .line-other {
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 0px;
+        border-bottom: none;
+    }
+}
+
+.graph-text-con {
+    margin-top: 8px;
+    @include flex-v-centered;
+    .line-blue {
+        margin-top: -16px;
+        margin-right: 6px;
+        width: 20px;
+        border-bottom: 2px solid $blue;
+    }
+    p {
+        @include graphtext;
+        color: $gray;
+    }
+}
+
+.graph-text-con-2 {
+    margin-top: 8px;
+    @include flex-v-centered;
+    margin-right: 30px;
+    .line-yellow {
+        margin-top: -16px;
+        margin-right: 6px;
+        width: 20px;
+        border-bottom: 2px solid $yellow;
+    }
+    p {
+        @include graphtext;
+        color: $gray;
+    }
+}
+
+.patients-graph {
+    background: $white;
+    border-radius: 5px;
+    // padding-bottom: 10px;
+    margin: 10px 0px 30px 0px;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    .graph-header {
+        @include flex-v-centered;
+        justify-content: space-between;
+        padding: 10px 24px 10px 24px;
+        .right {
+            @include flex-v-centered;
+        }
+    }
+}
+
+.earning-graph-1 {
+    background: $white;
+    border-radius: 5px;
+    // padding-bottom: 10px;
+    margin: 10px 0px 30px 0px;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    .graph-header {
+        @include flex-v-centered;
+        justify-content: space-between;
+        padding: 10px 24px 10px 24px;
+    }
+}
+
+.earning-graph-2 {
+    background: $white;
+    border-radius: 5px;
+    // padding-bottom: 10px;
+    margin: 10px 0px 30px 0px;
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+    .graph-header {
+        @include flex-v-centered;
+        justify-content: space-between;
+        padding: 10px 24px 10px 24px;
+    }
+}
+
+.graph-label {
+    @include graphlabel;
+}
+
+.graph-container {
+    margin-right: 25px;
+}
+
+//--!End-------Graph--------------//
