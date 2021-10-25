@@ -10,6 +10,8 @@ import Dashboard from '../containers/Dashboard';
 // Custom Components
 import Header from '../components/header/Header';
 import Navigationbar from '../components/navigationbar/Navigationbar';
+import Login from '../containers/Login';
+import Register from '../containers/Register';
 
 const Navigation = (props) => {
   // Destructuring Props
@@ -42,13 +44,25 @@ const Navigation = (props) => {
   return (
     <Router>
       <div className='container'>
-        <Header
-          onChange={(e) => {
-            handleSearch(e.target.value);
+        <div
+          style={{
+            display:
+              window.location.pathname === '/login' ||
+              window.location.pathname === '/register'
+                ? 'none'
+                : 'block',
           }}
-        />
-        <Navigationbar />
+        >
+          <Header
+            onChange={(e) => {
+              handleSearch(e.target.value);
+            }}
+          />
+          <Navigationbar />
+        </div>
         <Switch>
+          <Route exact path='/login' render={() => <Login />} />
+          <Route exact path='/register' render={() => <Register />} />
           <Route
             exact
             path='/'

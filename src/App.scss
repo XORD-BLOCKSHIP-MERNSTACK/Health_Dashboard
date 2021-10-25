@@ -426,3 +426,52 @@ code {
 }
 
 //--!End-------Graph--------------//
+//--!Start------Login/Register-------------//
+.login,
+.register {
+    @include flex-v-centered;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    .logo-con {
+        @include flex-v-centered;
+        justify-content: center;
+        padding: 20px;
+    }
+    button {
+        width: 350px;
+        padding: 10px 40px;
+        border: none;
+        background: $blue;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: $white;
+    }
+    button:hover {
+        background: $lightBlue;
+    }
+}
+
+.register {
+    margin-top: 20px !important;
+}
+
+.input-con {
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid $blue;
+    margin-bottom: 10px;
+    input {
+        @include flex-v-centered;
+        width: 300px;
+        padding: 10px;
+        border: none;
+        @include input-text;
+    }
+    input::placeholder {
+        @include placeholder-text;
+        font-size: 14px;
+    }
+}
+
+//--!End------Login/Register-------------//
