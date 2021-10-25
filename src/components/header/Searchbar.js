@@ -1,32 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Images
 import SearchIcon from '../../assets/other/searchIcon.png';
 
 const Searchbar = (props) => {
+  // Destructuring Props
   const { onChange } = props;
-  // const [searchField, setSearchField] = useState('');
-
-  // // Input Handling
-  // const handleInputChange = (value) => {
-  //   setSearchField(value);
-  //   reset();
-  // };
-
-  // // Reset Inputs
-  // const reset = () => {
-  //   setSearchField('');
-  // };
 
   return (
     <div className='search-bar'>
       <img src={SearchIcon} alt='Search Icon' />
-      <input
-        type='text'
-        placeholder='Search'
-        // onChange={(e) => handleInputChange(e.target.value)}
-        onChange={onChange}
-      />
+      <input type='text' placeholder='Search' onChange={onChange} />
     </div>
   );
 };

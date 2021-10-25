@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { NavLinks } from '../../constants/staticData';
 
 // Custom components
-import List from '../other/List';
+import { List } from '../other/List';
 import Navlink from './Navlink';
 
 const Navigationbar = () => {

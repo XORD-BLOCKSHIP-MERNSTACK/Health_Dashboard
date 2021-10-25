@@ -8,41 +8,49 @@ export const NavLinks = [
     path: '/',
     name: 'Dashboard',
     dropdown: false,
+    active: false,
   },
   {
     path: '/appointment',
     name: 'Appointments',
     dropdown: false,
+    active: false,
   },
   {
     path: '/',
     name: 'Doctors',
     dropdown: false,
+    active: false,
   },
   {
     path: '/',
     name: 'Departments',
     dropdown: false,
+    active: false,
   },
   {
     path: '/',
     name: 'Patients',
     dropdown: false,
+    active: false,
   },
   {
     path: '/',
     name: 'Payments',
     dropdown: false,
+    active: false,
   },
   {
     path: '/',
     name: 'Service Pages',
     dropdown: false,
+    active: false,
   },
   {
     path: '/',
     name: 'Help',
     dropdown: false,
+    active: false,
   },
 ];
 
@@ -73,7 +81,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Ayesha Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -83,7 +91,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Sana Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -93,7 +101,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Mahnoor Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -103,7 +111,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Laila Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -113,7 +121,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Faha Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -123,7 +131,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Saba Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -133,7 +141,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Asad Alexander',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',
@@ -143,7 +151,7 @@ export const Appointment = [
   {
     doctorId: 1,
     userimg: UserImg,
-    name: 'Leslie Alexander',
+    name: 'Saba Asad',
     email: 'lesie.alexander@example.com',
     date: '10/10/2020',
     visitTime: '09:15-09:45am',

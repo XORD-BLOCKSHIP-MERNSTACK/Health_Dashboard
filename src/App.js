@@ -5,8 +5,6 @@ import './App.scss';
 
 // React Redux
 import { useDispatch } from 'react-redux';
-
-// Redux Action
 import { get_Appointments } from './store/actions/appointmentAction';
 
 // Routes
@@ -14,7 +12,6 @@ import Navigation from './routes/Navigation';
 
 const App = () => {
   const [Appointment, setAppointment] = useState([]);
-
   const dispatch = useDispatch();
 
   useEffect(() => {

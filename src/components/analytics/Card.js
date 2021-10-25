@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Card = (props) => {
+  // Destructuring Props
   const { title, stats, image } = props.data;
 
   return (

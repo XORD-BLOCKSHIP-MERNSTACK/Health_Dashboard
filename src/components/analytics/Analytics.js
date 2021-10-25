@@ -5,7 +5,7 @@ import { AnalyticsStats } from '../../constants/staticData';
 
 // Custom Components
 import Card from './Card';
-import List from '../other/List';
+import { List } from '../other/List';
 import { Earninggraphs, Patientsgraph } from './Graph';
 
 const Analytics = () => {

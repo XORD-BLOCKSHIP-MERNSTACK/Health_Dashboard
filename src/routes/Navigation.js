@@ -24,7 +24,7 @@ const Navigation = (props) => {
   const handleSearch = (text) => {
     if (window.location.pathname === '/') {
       setActivitySearch(true);
-      let Filteredlist = appointmentData.filter((value) => {
+      let Filteredlist = appointmentData.slice(0, 5).filter((value) => {
         return value.name.toLowerCase().includes(text.toLowerCase()) !== false;
       });
       setSearchedActivityData(Filteredlist);

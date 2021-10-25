@@ -3,7 +3,7 @@ import React from 'react';
 // Custom Components
 import { SubHeading } from '../other/Heading';
 import { Cardlabels, Card } from './Card';
-import List from '../other/List';
+import { List } from '../other/List';
 
 const Activity = (props) => {
   // Destructuring props

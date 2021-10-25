@@ -3,7 +3,7 @@ import React from 'react';
 // Custom Components
 import { MainHeading } from '../other/Heading';
 import { Cardlabels, Card } from './Card';
-import List from '../other/List';
+import { List } from '../other/List';
 import Paging from '../other/Paging';
 
 const AppointmentC = (props) => {
