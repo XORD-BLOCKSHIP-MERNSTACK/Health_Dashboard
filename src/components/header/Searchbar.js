@@ -3,19 +3,20 @@ import React, { useState } from 'react';
 // Images
 import SearchIcon from '../../assets/other/searchIcon.png';
 
-const Searchbar = () => {
-  const [searchField, setSearchField] = useState('');
+const Searchbar = (props) => {
+  const { onChange } = props;
+  // const [searchField, setSearchField] = useState('');
 
-  // Input Handling
-  const handleInputChange = (value) => {
-    setSearchField(value);
-    reset();
-  };
+  // // Input Handling
+  // const handleInputChange = (value) => {
+  //   setSearchField(value);
+  //   reset();
+  // };
 
-  // Reset Inputs
-  const reset = () => {
-    setSearchField('');
-  };
+  // // Reset Inputs
+  // const reset = () => {
+  //   setSearchField('');
+  // };
 
   return (
     <div className='search-bar'>
@@ -23,7 +24,8 @@ const Searchbar = () => {
       <input
         type='text'
         placeholder='Search'
-        onChange={(e) => handleInputChange(e.target.value)}
+        // onChange={(e) => handleInputChange(e.target.value)}
+        onChange={onChange}
       />
     </div>
   );

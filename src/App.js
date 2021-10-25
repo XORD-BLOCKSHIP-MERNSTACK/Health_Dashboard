@@ -20,7 +20,7 @@ const App = () => {
   useEffect(() => {
     let appointments = dispatch(get_Appointments(1));
     setAppointment(appointments.data);
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className='app'>
