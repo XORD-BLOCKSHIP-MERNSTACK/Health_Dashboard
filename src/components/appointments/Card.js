@@ -30,12 +30,14 @@ export const Card = (props) => {
         </div>
         <div className='col-sm-1'>
           <img
+            id='icon'
             onClick={onClickHandler}
             className='img-fluid'
             src={EditIcon}
             alt='Edit Icon'
           />
           <img
+            id='icon'
             onClick={onClickHandler}
             className='img-fluid'
             src={DeleteIcon}

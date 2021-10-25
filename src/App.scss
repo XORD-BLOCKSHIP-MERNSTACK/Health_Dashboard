@@ -274,7 +274,9 @@ code {
         }
     }
     .col-sm-8 {
-        @include flex-v-centered;
+        // @include flex-v-centered;
+        display: flex;
+        align-items: center;
     }
     .col-sm-1 {
         @include flex-v-centered;
@@ -288,6 +290,39 @@ code {
         @include list-text;
         color: $darkGrey;
         margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .label-card {
+        display: none;
+    }
+    .data-card {
+        .col-sm-8 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    .col-sm-1 {
+        @include flex-v-centered;
+        justify-content: space-between;
+        margin-top: -5px;
+        #icon {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .col-sm-1 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -5px;
+        #icon {
+            float: right;
+            margin-left: 10px;
+        }
     }
 }
 
