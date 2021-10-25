@@ -8,7 +8,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 
@@ -129,8 +128,13 @@ export const Graphh = () => {
           </linearGradient>
         </defs>
         <CartesianGrid vertical={false} strokeDasharray='3 3' />
-        <XAxis tick={{ fill: '#CACCCF' }} dataKey='name' />
-        <YAxis tickCount={7} axisLine={false} tick={{ fill: '#CACCCF' }} />
+        <XAxis tick={{ fill: '#CACCCF' }} dataKey='name' stroke='#CACCCF' />
+        <YAxis
+          tickCount={7}
+          axisLine={false}
+          tick={{ fill: '#CACCCF' }}
+          stroke='#CACCCF'
+        />
         <Tooltip />
         <Area
           type='monotone'
@@ -158,8 +162,8 @@ export const Graphh2 = () => {
     <ResponsiveContainer height={250}>
       <LineChart className='graph-label' data={data}>
         <CartesianGrid vertical={false} strokeDasharray='3 3' />
-        <XAxis tick={{ fill: '#CACCCF' }} dataKey='name' />
-        <YAxis axisLine={false} tick={{ fill: '#CACCCF' }} />
+        <XAxis tick={{ fill: '#CACCCF' }} dataKey='name' stroke='#CACCCF' />
+        <YAxis axisLine={false} tick={{ fill: '#CACCCF' }} stroke='#CACCCF' />
         <Tooltip />
         <Line
           type='monotone'
@@ -178,8 +182,8 @@ export const Graphh3 = () => {
     <ResponsiveContainer height={250}>
       <LineChart className='graph-label' data={data2}>
         <CartesianGrid vertical={false} strokeDasharray='3 3' />
-        <XAxis tick={{ fill: '#CACCCF' }} dataKey='name' />
-        <YAxis axisLine={false} tick={{ fill: '#CACCCF' }} />
+        <XAxis tick={{ fill: '#CACCCF' }} dataKey='name' stroke='#CACCCF' />
+        <YAxis axisLine={false} tick={{ fill: '#CACCCF' }} stroke='#CACCCF' />
         <Tooltip />
         <Line
           type='monotone'

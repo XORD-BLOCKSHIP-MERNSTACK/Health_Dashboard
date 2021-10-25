@@ -5,7 +5,7 @@ import Logo from '../../assets/logo/logo.png';
 import Avatar from '../../assets/other/avatar.png';
 
 // Icons
-import { IoIosNotificationsOutline } from 'react-icons/io';
+import { IoIosNotifications } from 'react-icons/io';
 
 // Custom Components
 import Searchbar from './Searchbar';
@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <div className='header-right'>
         <div className='notification-icon'>
-          <IoIosNotificationsOutline size={30} color=' #CACCCF' />
+          <IoIosNotifications size={30} color=' #CACCCF' />
         </div>
         <img className='img-fluid' src={Avatar} alt='User Avatar' />
       </div>

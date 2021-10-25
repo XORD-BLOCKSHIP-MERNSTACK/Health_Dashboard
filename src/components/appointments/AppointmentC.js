@@ -1,15 +1,15 @@
 import React from 'react';
 
-// Appointment Data
-import { Appointment } from '../../constants/staticData';
-
 // Custom Components
 import { MainHeading } from '../other/Heading';
 import { Cardlabels, Card } from './Card';
 import List from '../other/List';
 import Paging from '../other/Paging';
 
-const AppointmentC = () => {
+const AppointmentC = (props) => {
+  // Destructuring props
+  const { data } = props;
+
   return (
     <div className='appointment'>
       <div className='heading-con'>
@@ -17,7 +17,7 @@ const AppointmentC = () => {
       </div>
       <div className='list-con'>
         <Cardlabels />
-        <List list={Appointment} Component={Card} />
+        <List list={data} Component={Card} />
         <Paging />
       </div>
     </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 
-// Appointment Data
-import { Appointment } from '../../constants/staticData';
-
 // Custom Components
 import { SubHeading } from '../other/Heading';
 import { Cardlabels, Card } from './Card';
 import List from '../other/List';
 
-const Activity = () => {
+const Activity = (props) => {
+  // Destructuring props
+  const { data } = props;
+
   return (
     <div className='activity'>
       <div className='heading-con'>
@@ -16,7 +16,7 @@ const Activity = () => {
       </div>
       <div className='list-con'>
         <Cardlabels />
-        <List list={Appointment} Component={Card} />
+        <List list={data.slice(0, 5)} Component={Card} />
       </div>
     </div>
   );

@@ -71,6 +71,7 @@ export const AnalyticsStats = [
 
 export const Appointment = [
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -80,6 +81,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -89,6 +91,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -98,6 +101,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -107,6 +111,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -116,6 +121,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -125,6 +131,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -134,6 +141,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -143,6 +151,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',
@@ -152,6 +161,7 @@ export const Appointment = [
     condition: 'Mumps Stage II',
   },
   {
+    doctorId: 1,
     userimg: UserImg,
     name: 'Leslie Alexander',
     email: 'lesie.alexander@example.com',

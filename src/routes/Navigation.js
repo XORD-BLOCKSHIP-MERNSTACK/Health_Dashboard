@@ -11,15 +11,25 @@ import Dashboard from '../containers/Dashboard';
 import Header from '../components/header/Header';
 import Navigationbar from '../components/navigationbar/Navigationbar';
 
-const Navigation = () => {
+const Navigation = (props) => {
+  const { appointmentData } = props;
+
   return (
     <Router>
       <div className='container'>
         <Header />
         <Navigationbar />
         <Switch>
-          <Route exact path='/' render={() => <Dashboard />} />
-          <Route exact path='/appointment' render={() => <Appointment />} />
+          <Route
+            exact
+            path='/'
+            render={() => <Dashboard data={appointmentData} />}
+          />
+          <Route
+            exact
+            path='/appointment'
+            render={() => <Appointment data={appointmentData} />}
+          />
         </Switch>
       </div>
     </Router>

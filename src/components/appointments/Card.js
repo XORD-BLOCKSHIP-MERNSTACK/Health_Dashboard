@@ -26,7 +26,7 @@ export const Card = (props) => {
           <h6 className='label'>{date}</h6>
           <h6 className='label3'>{visitTime}</h6>
           <h6 className='label'>{doctor}</h6>
-          <h6 className='label5'>{doctor}</h6>
+          <h6 className='label5'>{condition}</h6>
         </div>
         <div className='col-sm-1'>
           <img

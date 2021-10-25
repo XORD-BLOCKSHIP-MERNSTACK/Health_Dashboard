@@ -3,10 +3,10 @@ import React, { Fragment } from 'react';
 // Custom Components
 import AppointmentC from '../components/appointments/AppointmentC';
 
-const Appointment = () => {
+const Appointment = (props) => {
   return (
     <Fragment>
-      <AppointmentC />
+      <AppointmentC {...props} />
     </Fragment>
   );
 };

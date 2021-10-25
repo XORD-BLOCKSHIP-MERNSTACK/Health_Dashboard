@@ -4,11 +4,11 @@ import React, { Fragment } from 'react';
 import Analytics from '../components/analytics/Analytics';
 import Activity from '../components/appointments/Activity';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   return (
     <Fragment>
       <Analytics />
-      <Activity />
+      <Activity {...props} />
     </Fragment>
   );
 };
